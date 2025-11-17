@@ -13,8 +13,7 @@ if command -v wget >/dev/null 2>&1
 then
    mkdir -p $HOME/.ssh
    chmod 700 $HOME/.ssh
-   wget "https://raw.githubusercontent.com/melazarus/bootstrap/refs/heads/main/public_keys/id_ed25519.pub" -O 
-"$HOME/.ssh/authorized_keys"
+   wget "https://raw.githubusercontent.com/melazarus/bootstrap/refs/heads/main/public_keys/id_ed25519.pub" -O "$HOME/.ssh/authorized_keys"
    chmod 600 $HOME/.ssh/*
 fi
 
